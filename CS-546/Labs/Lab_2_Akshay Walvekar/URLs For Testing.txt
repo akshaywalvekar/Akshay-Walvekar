@@ -1,0 +1,23 @@
+URLs for testing
+
+Valid Input
+
+Function 1:(LoanRepayment)
+http://localhost:3000/api/LoanRepayment?monthlyAmount=100&runningAmount=100&rateOfInterest=0.1
+
+Function 2:(RetirementAmount)
+http://localhost:3000/api/RetirementAmount?years=1&monthlyAmount=100&rateOfInterest=0.1
+
+Function 3:(InvestedAmount)
+http://localhost:3000/api/InvestedAmount?years=1&InvestingAmount=100&rateOfInterest=0.1
+
+Invalid Input
+
+Function 1:(LoanRepayment)
+http://localhost:3000/api/LoanRepayment?monthlyAmount=-100&runningAmount=100&rateOfInterest=0.1
+
+Function 2:(RetirementAmount)
+http://localhost:3000/api/RetirementAmount?years=1&monthlyAmount=-100&rateOfInterest=0.1
+
+Function 3:(InvestedAmount)
+http://localhost:3000/api/InvestedAmount?years=1&InvestingAmount=100&rateOfInterest=-0.1

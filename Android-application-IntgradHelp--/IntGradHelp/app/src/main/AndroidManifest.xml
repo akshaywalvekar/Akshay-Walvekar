@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.akshay.intgradhelp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".allServices"
+            android:label="@string/title_activity_all_services" >
+        </activity>
+        <activity
+            android:name=".comboServices"
+            android:label="@string/title_activity_combo_services" >
+        </activity>
+        <activity
+            android:name=".individualServices"
+            android:label="@string/title_activity_individual_services" >
+        </activity>
+        <activity
+            android:name=".ApartmentService"
+            android:label="@string/title_activity_apartment_service" >
+        </activity>
+        <activity
+            android:name=".AirportPickup"
+            android:label="@string/title_activity_airport_pickup" >
+        </activity>
+        <activity
+            android:name=".Banking"
+            android:label="@string/title_activity_banking" >
+        </activity>
+        <activity
+            android:name=".ComboPackOne"
+            android:label="@string/title_activity_combo_pack_one" >
+        </activity>
+    </application>
+
+</manifest>
