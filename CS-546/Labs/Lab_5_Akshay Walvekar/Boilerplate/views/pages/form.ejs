@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ../partials/head %>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Finance Calculator</h1>
+            </div>
+        </div>
+        <main>
+        <form class="form form-horizontal" id="loan-repayment">
+			<h3>Loan Repayment</h3>
+            <div class="form-group">
+                <label for="number-one" class="col-sm-2 control-label">Loan Amount</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="loan-number-one" placeholder="Loan Amount">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="localstorage-value" class="col-sm-2 control-label">Monthly Amount</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="loan-number-two" placeholder="Monthly Amount">
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="localstorage-value" class="col-sm-2 control-label">Rate of Interest</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="loan-number-three" placeholder="Rate of Interest">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6">
+                    <button type="button" class="btn btn-default" id="loan-submit">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div class="alert alert-danger hidden" id="loan-error-message"></div>
+		
+		<form class="form form-horizontal" id="loan-repayment">
+			<h3>Investment Amount</h3>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Years of Investment</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="invest-number-one" placeholder="Years of Investment">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Monthly Amount</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="invest-number-two" placeholder="Monthly Amount">
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="localstorage-value" class="col-sm-2 control-label">Rate of Interest</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="invest-number-three" placeholder="Rate of Interest">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6">
+                    <button type="button" class="btn btn-default" id="invest-submit">Submit</button>
+                </div>
+            </div>
+        </form>
+		<div class="alert alert-danger hidden" id="invest-error-message"></div>
+		
+		<form class="form form-horizontal" id="loan-repayment">
+			<h3>Investment Amount</h3>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Years for Retirement</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="retire-number-one" placeholder="Years of Investment">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Monthly Amount</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="retire-number-two" placeholder="Monthly Amount">
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="localstorage-value" class="col-sm-2 control-label">Rate of Interest</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="retire-number-three" placeholder="Rate of Interest">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6">
+                    <button type="button" class="btn btn-default" id="retire-submit">Submit</button>
+                </div>
+            </div>
+        </form>
+		<div class="alert alert-danger hidden" id="retire-error-message"></div>
+		
+	</main>
+</div>
+
+<% include ../partials/scripts %>
+
+</body>
+
+</html>
